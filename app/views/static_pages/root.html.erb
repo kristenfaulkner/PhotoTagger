@@ -1,0 +1,15 @@
+<div id="content">
+  <form id='get-photo-url'>
+    <input type="text" placeholder="http://..." id="photo-url">
+    <button id="get-photo-button">Upload Photo</button>
+  </form>
+  
+</div>
+
+
+<script>
+window.currentUserId = <%= current_user.id %>
+$(function() {
+  App.initialize(window.currentUserId);
+})
+</script>
